@@ -1,30 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Toaster } from "@/components/ui/toaster";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
-import ContactPage from "./pages/ContactPage";
-import AppointmentPage from "./pages/AppointmentPage";
-
 export default function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col bg-gray-50">
-        <Header />
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/appointment" element={<AppointmentPage />} />
-          </Routes>
-        </main>
-        <Footer />
-        <Toaster />
+    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold text-white mb-4">
+          Hello World!
+        </h1>
+        <p className="text-xl text-blue-100 mb-8">
+          Welcome to my TypeScript static site
+        </p>
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-md mx-auto">
+          <p className="text-white">
+            This is a simple static website built with TypeScript and React, 
+            ready to be deployed on GitHub Pages.
+          </p>
+        </div>
       </div>
-    </Router>
+    </div>
   );
 }
