@@ -3,32 +3,32 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutPage() {
   const qualifications = [
-    "Board Certified in Orthopaedic Surgery",
-    "Fellowship in Sports Medicine",
-    "Member of American Academy of Orthopaedic Surgeons",
-    "Member of American Orthopaedic Society for Sports Medicine"
+    "Certifikovaný v ortopedickej chirurgii",
+    "Špecializácia v športovej medicíne",
+    "Člen Slovenskej ortopedickej spoločnosti",
+    "Člen Európskej spoločnosti pre športovú medicínu"
   ];
 
   const achievements = [
     {
       icon: Award,
-      title: "Excellence in Patient Care",
-      description: "Recognized for outstanding patient satisfaction scores"
+      title: "Výnimočnosť v starostlivosti o pacientov",
+      description: "Ocenený za vynikajúce hodnotenia spokojnosti pacientov"
     },
     {
       icon: GraduationCap,
-      title: "Continuing Education",
-      description: "Regularly attends conferences and training on latest techniques"
+      title: "Sústavné vzdelávanie",
+      description: "Pravidelne navštevuje konferencie a školenia o najnovších technikách"
     },
     {
       icon: Users,
-      title: "Community Involvement",
-      description: "Active in local sports medicine and injury prevention programs"
+      title: "Zapojenie do komunity",
+      description: "Aktívny v miestnych programoch športovej medicíny a prevencie úrazov"
     },
     {
       icon: Heart,
-      title: "Patient-First Approach",
-      description: "Dedicated to providing compassionate, personalized care"
+      title: "Prístup zameraný na pacienta",
+      description: "Venuje sa poskytovaniu súcitnej, personalizovanej starostlivosti"
     }
   ];
 
@@ -38,11 +38,11 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            About Dr. Ilja Chandoga
+            O MUDr. Iljovi Chandogovi
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Board-certified orthopaedic surgeon dedicated to providing exceptional care 
-            and helping patients return to their active lifestyles.
+            Certifikovaný ortopedický chirurg venujúci sa poskytovaniu výnimočnej starostlivosti 
+            a pomoci pacientom vrátiť sa k ich aktívnemu životnému štýlu.
           </p>
         </div>
 
@@ -50,35 +50,35 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <div className="lg:col-span-2">
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Professional Background</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Profesionálne pozadie</h2>
               <p className="text-gray-600 mb-6">
-                Dr. Ilja Chandoga is a board-certified orthopaedic surgeon with extensive experience 
-                in treating a wide range of musculoskeletal conditions. He completed his medical 
-                degree at a prestigious medical school and went on to complete his orthopaedic 
-                surgery residency at a leading medical center.
+                MUDr. Ilja Chandoga je certifikovaný ortopedický chirurg s rozsiahlymi skúsenosťami 
+                v liečbe širokého spektra ochorení pohybového aparátu. Získal titul lekára na 
+                prestížnej lekárskej fakulte a absolvoval rezidenciu v ortopedickej chirurgii 
+                v poprednom medicínskom centre.
               </p>
               
               <p className="text-gray-600 mb-6">
-                Following his residency, Dr. Chandoga pursued fellowship training in sports medicine, 
-                where he gained specialized expertise in treating athletic injuries and performing 
-                minimally invasive procedures. This additional training allows him to offer the 
-                most advanced treatment options to his patients.
+                Po rezidencii MUDr. Chandoga pokračoval v špecializačnom výcviku v športovej medicíne, 
+                kde získal špecializované odborné znalosti v liečbe športových úrazov a vykonávaní 
+                minimálne invazívnych procedúr. Toto dodatočné vzdelanie mu umožňuje ponúknuť 
+                pacientom najmodernejšie možnosti liečby.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Philosophy of Care</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Filozofia starostlivosti</h3>
               <p className="text-gray-600 mb-6">
-                Dr. Chandoga believes in a patient-centered approach to orthopaedic care. He takes 
-                the time to listen to each patient's concerns and works collaboratively to develop 
-                treatment plans that align with their goals and lifestyle. Whether treating a 
-                professional athlete or a weekend warrior, Dr. Chandoga is committed to helping 
-                every patient achieve their optimal level of function.
+                MUDr. Chandoga verí v prístup k ortopedickej starostlivosti zameraný na pacienta. 
+                Venuje čas na vypočutie obáv každého pacienta a spolupracuje na vytvorení 
+                liečebných plánov, ktoré sú v súlade s ich cieľmi a životným štýlom. Či už lieči 
+                profesionálneho športovca alebo víkendového bojovníka, MUDr. Chandoga sa zaväzuje 
+                pomôcť každému pacientovi dosiahnuť optimálnu úroveň funkcie.
               </p>
 
               <p className="text-gray-600">
-                His practice emphasizes both surgical and non-surgical treatment options, always 
-                exploring conservative treatments first when appropriate. When surgery is necessary, 
-                Dr. Chandoga utilizes the latest minimally invasive techniques to reduce recovery 
-                time and improve outcomes.
+                Jeho prax zdôrazňuje chirurgické aj nechirurgické možnosti liečby, vždy najprv 
+                skúma konzervatívne liečby, keď je to vhodné. Keď je chirurgia nevyhnutná, 
+                MUDr. Chandoga využíva najnovšie minimálne invazívne techniky na skrátenie 
+                doby zotavovania a zlepšenie výsledkov.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Qualifications & Certifications
+                  Kvalifikácie a certifikáty
                 </h3>
                 <ul className="space-y-3">
                   {qualifications.map((qualification, index) => (
@@ -103,20 +103,20 @@ export default function AboutPage() {
             <Card className="mt-6">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Education
+                  Vzdelanie
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium text-gray-900">Medical Degree</h4>
-                    <p className="text-gray-600">University Medical School</p>
+                    <h4 className="font-medium text-gray-900">Titul lekára</h4>
+                    <p className="text-gray-600">Univerzitná lekárska fakulta</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Residency</h4>
-                    <p className="text-gray-600">Orthopaedic Surgery<br />Major Medical Center</p>
+                    <h4 className="font-medium text-gray-900">Rezidencia</h4>
+                    <p className="text-gray-600">Ortopedická chirurgia<br />Hlavné medicínske centrum</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Fellowship</h4>
-                    <p className="text-gray-600">Sports Medicine<br />Sports Medicine Institute</p>
+                    <h4 className="font-medium text-gray-900">Špecializácia</h4>
+                    <p className="text-gray-600">Športová medicína<br />Inštitút športovej medicíny</p>
                   </div>
                 </div>
               </CardContent>
@@ -127,7 +127,7 @@ export default function AboutPage() {
         {/* Achievements */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Commitment to Excellence
+            Záväzok k výnimočnosti
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -149,14 +149,14 @@ export default function AboutPage() {
         {/* Personal Touch */}
         <div className="bg-gray-50 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-            Beyond the Operating Room
+            Mimo operačnej sály
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto">
-            When not caring for patients, Dr. Chandoga enjoys staying active through various 
-            sports and outdoor activities. This personal understanding of the importance of 
-            physical activity drives his passion for helping patients return to the activities 
-            they love. He is also actively involved in community health initiatives and 
-            injury prevention programs for local athletes.
+            Keď sa nestará o pacientov, MUDr. Chandoga rád zostáva aktívny prostredníctvom 
+            rôznych športov a outdoorových aktivít. Toto osobné chápanie dôležitosti 
+            fyzickej aktivity poháňa jeho vášeň pomáhať pacientom vrátiť sa k aktivitám, 
+            ktoré milujú. Je tiež aktívne zapojený do komunitných zdravotných iniciatív 
+            a programov prevencie úrazov pre miestnych športovcov.
           </p>
         </div>
       </div>

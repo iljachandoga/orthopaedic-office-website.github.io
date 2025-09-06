@@ -12,67 +12,67 @@ export default function Footer() {
                 <span className="text-white font-bold text-lg">IC</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Dr. Ilja Chandoga</h3>
-                <p className="text-gray-300">Orthopaedic Surgery</p>
+                <h3 className="text-xl font-bold">MUDr. Ilja Chandoga</h3>
+                <p className="text-gray-300">Ortopedická chirurgia</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Providing comprehensive orthopaedic care with a focus on patient-centered treatment 
-              and the latest surgical techniques.
+              Poskytujeme komplexnú ortopedickú starostlivosť so zameraním na pacientov 
+              a najnovšie chirurgické techniky.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">Rýchle odkazy</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white transition-colors">
-                  Home
+                  Domov
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                  About Dr. Chandoga
+                  O MUDr. Chandogovi
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
-                  Services
+                  Služby
                 </Link>
               </li>
               <li>
                 <Link to="/appointment" className="text-gray-300 hover:text-white transition-colors">
-                  Book Appointment
+                  Objednať termín
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-4">Kontaktné údaje</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">(555) 123-4567</span>
+                <span className="text-gray-300">+421 555 123 456</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">info@chandogaortho.com</span>
+                <span className="text-gray-300">info@chandogaortho.sk</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400 mt-1" />
                 <span className="text-gray-300">
-                  123 Medical Center Drive<br />
-                  Suite 200<br />
-                  City, State 12345
+                  Zdravotnícke centrum 123<br />
+                  Apartmán 200<br />
+                  Bratislava 811 01
                 </span>
               </div>
               <div className="flex items-start space-x-2">
                 <Clock className="h-4 w-4 text-blue-400 mt-1" />
                 <div className="text-gray-300">
-                  <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
-                  <p>Sat: 9:00 AM - 1:00 PM</p>
-                  <p>Sun: Closed</p>
+                  <p>Po-Pi: 8:00 - 17:00</p>
+                  <p>So: 9:00 - 13:00</p>
+                  <p>Ne: Zatvorené</p>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Dr. Ilja Chandoga Orthopaedic Surgery. All rights reserved.
+            © 2024 MUDr. Ilja Chandoga Ortopedická chirurgia. Všetky práva vyhradené.
           </p>
         </div>
       </div>

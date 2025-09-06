@@ -18,7 +18,7 @@ export interface ContactResponse {
   message: string;
 }
 
-// Submits a contact form inquiry.
+// Odošle dotaz z kontaktného formulára.
 export const submitContact = api<ContactRequest, ContactResponse>(
   { expose: true, method: "POST", path: "/contact" },
   async (req) => {
@@ -29,7 +29,7 @@ export const submitContact = api<ContactRequest, ContactResponse>(
 
     return {
       success: true,
-      message: "Thank you for your inquiry. We will contact you soon.",
+      message: "Ďakujeme za váš dotaz. Čoskoro vás kontaktujeme.",
     };
   }
 );

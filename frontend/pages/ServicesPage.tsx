@@ -15,79 +15,79 @@ export default function ServicesPage() {
   const services = [
     {
       icon: Bone,
-      title: "Joint Replacement Surgery",
-      description: "Advanced hip, knee, and shoulder replacement procedures using the latest techniques and implants.",
+      title: "Náhrada kĺbov",
+      description: "Pokročilé procedúry náhrady bedrového, kolenného a ramenného kĺbu s použitím najnovších techník a implantátov.",
       details: [
-        "Total and partial joint replacements",
-        "Minimally invasive techniques",
-        "Computer-assisted surgery",
-        "Rapid recovery protocols"
+        "Úplné a čiastočné náhrady kĺbov",
+        "Minimálne invazívne techniky",
+        "Počítačom asistovaná chirurgia",
+        "Protokoly rýchleho zotavovania"
       ]
     },
     {
       icon: Activity,
-      title: "Sports Medicine",
-      description: "Comprehensive care for athletic injuries and performance optimization for athletes of all levels.",
+      title: "Športová medicína",
+      description: "Komplexná starostlivosť o športové úrazy a optimalizácia výkonu pre športovcov všetkých úrovní.",
       details: [
-        "ACL and meniscus repair",
-        "Rotator cuff surgery",
-        "Concussion management",
-        "Return-to-play protocols"
+        "Oprava predného skríženého väzu a menisku",
+        "Chirurgia rotátorovej manžety",
+        "Manažment otrasov mozgu",
+        "Protokoly návratu do hry"
       ]
     },
     {
       icon: Zap,
-      title: "Arthroscopic Surgery",
-      description: "Minimally invasive procedures for joint problems with faster recovery times.",
+      title: "Artroskopická chirurgia",
+      description: "Minimálne invazívne procedúry pre problémy kĺbov s rýchlejšími dobami zotavovania.",
       details: [
-        "Knee arthroscopy",
-        "Shoulder arthroscopy",
-        "Hip arthroscopy",
-        "Ankle arthroscopy"
+        "Artroskopia kolena",
+        "Artroskopia ramena",
+        "Artroskopia bedra",
+        "Artroskopia členka"
       ]
     },
     {
       icon: Shield,
-      title: "Fracture Care",
-      description: "Expert treatment of broken bones and traumatic injuries with focus on optimal healing.",
+      title: "Liečba zlomenín",
+      description: "Odborná liečba zlomených kostí a traumatických úrazov so zameraním na optimálne hojenie.",
       details: [
-        "Emergency fracture care",
-        "Complex fracture reconstruction",
-        "Non-union treatment",
-        "Pediatric fractures"
+        "Pohotovostná starostlivosť o zlomeniny",
+        "Rekonštrukcia zložitých zlomenín",
+        "Liečba nezrastania",
+        "Detské zlomeniny"
       ]
     },
     {
       icon: Heart,
-      title: "Spine Surgery",
-      description: "Treatment of spinal conditions including herniated discs, stenosis, and deformities.",
+      title: "Chirurgia chrbtice",
+      description: "Liečba ochorení chrbtice vrátane hernických diskov, stenózy a deformít.",
       details: [
-        "Minimally invasive spine surgery",
-        "Disc replacement",
-        "Spinal fusion",
-        "Decompression procedures"
+        "Minimálne invazívna chirurgia chrbtice",
+        "Náhrada disku",
+        "Spondylodéza",
+        "Dekompresné procedúry"
       ]
     },
     {
       icon: Hand,
-      title: "Hand & Wrist Surgery",
-      description: "Specialized care for hand, wrist, and upper extremity conditions and injuries.",
+      title: "Chirurgia ruky a zápästia",
+      description: "Špecializovaná starostlivosť o stavy a úrazy ruky, zápästia a horných končatín.",
       details: [
-        "Carpal tunnel surgery",
-        "Trigger finger treatment",
-        "Fracture repair",
-        "Tendon reconstruction"
+        "Chirurgia karpálneho tunela",
+        "Liečba triggerfinger",
+        "Oprava zlomenín",
+        "Rekonštrukcia šliach"
       ]
     }
   ];
 
   const nonSurgicalTreatments = [
-    "Physical therapy referrals",
-    "Injection therapy",
-    "Platelet-rich plasma (PRP)",
-    "Bracing and orthotics",
-    "Pain management",
-    "Activity modification"
+    "Odporúčania na fyzioterapiu",
+    "Injekčná terapia",
+    "Terapia bohatou na trombocyty plazmu (PRP)",
+    "Dlahové a ortotické pomôcky",
+    "Manažment bolesti",
+    "Modifikácia aktivity"
   ];
 
   return (
@@ -96,11 +96,11 @@ export default function ServicesPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Orthopaedic Services
+            Ortopedické služby
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive orthopaedic care from diagnosis to recovery, utilizing the latest 
-            techniques and technologies to get you back to your active lifestyle.
+            Komplexná ortopedická starostlivosť od diagnózy po zotavenie, využívajúca najnovšie 
+            techniky a technológie na vrátenie k aktívnemu životnému štýlu.
           </p>
         </div>
 
@@ -134,11 +134,11 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Non-Surgical Treatments
+                Nechirurgické liečby
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Not all orthopaedic conditions require surgery. Dr. Chandoga believes in 
-                exploring conservative treatment options first whenever possible.
+                Nie všetky ortopedické stavy vyžadujú chirurgiu. MUDr. Chandoga verí v 
+                skúmanie konzervatívnych možností liečby ako prvé, kedykoľvek je to možné.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {nonSurgicalTreatments.map((treatment, index) => (
@@ -151,18 +151,18 @@ export default function ServicesPage() {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Treatment Philosophy
+                Filozofia liečby
               </h3>
               <p className="text-gray-600 mb-4">
-                Dr. Chandoga takes a comprehensive approach to treatment, considering all 
-                options from conservative care to advanced surgical procedures.
+                MUDr. Chandoga pristupuje k liečbe komplexne, zvažuje všetky 
+                možnosti od konzervatívnej starostlivosti po pokročilé chirurgické procedúry.
               </p>
               <ul className="space-y-2 text-gray-600">
-                <li>• Thorough evaluation and diagnosis</li>
-                <li>• Conservative treatment when appropriate</li>
-                <li>• Patient education and involvement</li>
-                <li>• Personalized treatment plans</li>
-                <li>• Focus on long-term outcomes</li>
+                <li>• Dôkladné vyšetrenie a diagnóza</li>
+                <li>• Konzervatívna liečba, keď je to vhodné</li>
+                <li>• Vzdelávanie pacientov a zapojenie</li>
+                <li>• Personalizované liečebné plány</li>
+                <li>• Zameranie na dlhodobé výsledky</li>
               </ul>
             </div>
           </div>
@@ -171,39 +171,39 @@ export default function ServicesPage() {
         {/* Technology & Techniques */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Advanced Technology & Techniques
+            Pokročilé technológie a techniky
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Minimally Invasive Surgery
+                  Minimálne invazívna chirurgia
                 </h3>
                 <p className="text-gray-600">
-                  Smaller incisions, less pain, and faster recovery times through 
-                  advanced surgical techniques.
+                  Menšie rezy, menej bolesti a rýchlejšie časy zotavovania pomocou 
+                  pokročilých chirurgických techník.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Computer-Assisted Surgery
+                  Počítačom asistovaná chirurgia
                 </h3>
                 <p className="text-gray-600">
-                  Precision surgical planning and execution using the latest 
-                  computer navigation systems.
+                  Presné chirurgické plánovanie a vykonávanie pomocou najnovších 
+                  počítačových navigačných systémov.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Regenerative Medicine
+                  Regeneratívna medicína
                 </h3>
                 <p className="text-gray-600">
-                  Cutting-edge treatments including PRP and stem cell therapy 
-                  to promote natural healing.
+                  Pokrokové liečby vrátane PRP a kmeňovej bunkovej terapie 
+                  na podporu prirodzeného hojenia.
                 </p>
               </CardContent>
             </Card>
@@ -213,21 +213,21 @@ export default function ServicesPage() {
         {/* CTA */}
         <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Your Treatment?
+            Pripravení začať svoju liečbu?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Schedule a consultation with Dr. Chandoga to discuss your condition 
-            and explore the best treatment options for you.
+            Naplánujte si konzultáciu s MUDr. Chandogom na prediskutovanie vášho stavu 
+            a preskúmanie najlepších možností liečby pre vás.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100">
               <Link to="/appointment">
-                Schedule Consultation
+                Naplánujte konzultáciu
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-blue-600">
-              <Link to="/contact">Ask Questions</Link>
+              <Link to="/contact">Položte otázky</Link>
             </Button>
           </div>
         </div>

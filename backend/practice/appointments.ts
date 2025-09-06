@@ -18,7 +18,7 @@ export interface AppointmentResponse {
   message: string;
 }
 
-// Submits an appointment request.
+// Odošle požiadavku o termín.
 export const requestAppointment = api<AppointmentRequest, AppointmentResponse>(
   { expose: true, method: "POST", path: "/appointments/request" },
   async (req) => {
@@ -35,7 +35,7 @@ export const requestAppointment = api<AppointmentRequest, AppointmentResponse>(
 
     return {
       success: true,
-      message: "Your appointment request has been submitted. We will contact you to confirm your appointment.",
+      message: "Vaša požiadavka o termín bola odoslaná. Kontaktujeme vás na potvrdenie vášho termínu.",
     };
   }
 );

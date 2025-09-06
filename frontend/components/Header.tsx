@@ -8,10 +8,10 @@ export default function Header() {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Contact", href: "/contact" },
+    { name: "Domov", href: "/" },
+    { name: "O nás", href: "/about" },
+    { name: "Služby", href: "/services" },
+    { name: "Kontakt", href: "/contact" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -24,15 +24,15 @@ export default function Header() {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <span>+421 555 123 456</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="h-4 w-4" />
-                <span>info@chandogaortho.com</span>
+                <span>info@chandogaortho.sk</span>
               </div>
             </div>
             <div className="hidden sm:block">
-              <span>Emergency: (555) 123-4568</span>
+              <span>Pohotovosť: +421 555 123 789</span>
             </div>
           </div>
         </div>
@@ -46,8 +46,8 @@ export default function Header() {
                 <span className="text-white font-bold text-lg">IC</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Dr. Ilja Chandoga</h1>
-                <p className="text-sm text-gray-600">Orthopaedic Surgery</p>
+                <h1 className="text-xl font-bold text-gray-900">MUDr. Ilja Chandoga</h1>
+                <p className="text-sm text-gray-600">Ortopedická chirurgia</p>
               </div>
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function Header() {
                 </Link>
               ))}
               <Button asChild className="ml-4">
-                <Link to="/appointment">Book Appointment</Link>
+                <Link to="/appointment">Objednať termín</Link>
               </Button>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Header() {
               <div className="pt-2">
                 <Button asChild className="w-full">
                   <Link to="/appointment" onClick={() => setIsMenuOpen(false)}>
-                    Book Appointment
+                    Objednať termín
                   </Link>
                 </Button>
               </div>

@@ -30,7 +30,7 @@ export default function ContactPage() {
       
       if (response.success) {
         toast({
-          title: "Message Sent",
+          title: "Správa odoslaná",
           description: response.message,
         });
         setFormData({
@@ -44,8 +44,8 @@ export default function ContactPage() {
     } catch (error) {
       console.error("Error submitting contact form:", error);
       toast({
-        title: "Error",
-        description: "There was an error sending your message. Please try again.",
+        title: "Chyba",
+        description: "Pri odosielaní vašej správy nastala chyba. Skúste to znovu.",
         variant: "destructive",
       });
     } finally {
@@ -60,27 +60,27 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Phone",
-      details: ["(555) 123-4567", "Emergency: (555) 123-4568"],
-      description: "Call us during business hours or for emergencies"
+      title: "Telefón",
+      details: ["+421 555 123 456", "Pohotovosť: +421 555 123 789"],
+      description: "Zavolajte nám počas pracovných hodín alebo v núdzových prípadoch"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@chandogaortho.com"],
-      description: "Send us a message and we'll respond within 24 hours"
+      details: ["info@chandogaortho.sk"],
+      description: "Pošlite nám správu a odpovieme do 24 hodín"
     },
     {
       icon: MapPin,
-      title: "Address",
-      details: ["123 Medical Center Drive", "Suite 200", "City, State 12345"],
-      description: "Visit our modern, fully-equipped facility"
+      title: "Adresa",
+      details: ["Zdravotnícke centrum 123", "Apartmán 200", "Bratislava 811 01"],
+      description: "Navštívte naše moderné, plne vybavené zariadenie"
     },
     {
       icon: Clock,
-      title: "Hours",
-      details: ["Mon-Fri: 8:00 AM - 5:00 PM", "Sat: 9:00 AM - 1:00 PM", "Sun: Closed"],
-      description: "We're here when you need us most"
+      title: "Hodiny",
+      details: ["Po-Pi: 8:00 - 17:00", "So: 9:00 - 13:00", "Ne: Zatvorené"],
+      description: "Sme tu, keď nás najviac potrebujete"
     }
   ];
 
@@ -90,11 +90,11 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Contact Dr. Chandoga's Office
+            Kontaktujte ordinaciju MUDr. Chandogu
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about your orthopaedic care? We're here to help. 
-            Contact us today to learn more about our services or schedule an appointment.
+            Máte otázky o svojej ortopedickej starostlivosti? Sme tu, aby sme pomohli. 
+            Kontaktujte nás ešte dnes, aby ste sa dozvedeli viac o našich službách alebo si naplánovali termín.
           </p>
         </div>
 
@@ -103,13 +103,13 @@ export default function ContactPage() {
           <div>
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+                <CardTitle className="text-2xl">Pošlite nám správu</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="name">Full Name *</Label>
+                      <Label htmlFor="name">Meno a priezvisko *</Label>
                       <Input
                         id="name"
                         type="text"
@@ -120,7 +120,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email">E-mailová adresa *</Label>
                       <Input
                         id="email"
                         type="email"
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="phone">Phone Number *</Label>
+                    <Label htmlFor="phone">Telefónne číslo *</Label>
                     <Input
                       id="phone"
                       type="tel"
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <Label>Preferred Contact Method *</Label>
+                    <Label>Preferovaný spôsob kontaktu *</Label>
                     <RadioGroup
                       value={formData.preferredContact}
                       onValueChange={(value) => handleInputChange("preferredContact", value)}
@@ -157,13 +157,13 @@ export default function ContactPage() {
                       </div>
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="phone" id="phone-contact" />
-                        <Label htmlFor="phone-contact">Phone</Label>
+                        <Label htmlFor="phone-contact">Telefón</Label>
                       </div>
                     </RadioGroup>
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message *</Label>
+                    <Label htmlFor="message">Správa *</Label>
                     <Textarea
                       id="message"
                       value={formData.message}
@@ -171,16 +171,16 @@ export default function ContactPage() {
                       required
                       rows={5}
                       className="mt-1"
-                      placeholder="Please describe your question or concern..."
+                      placeholder="Prosím, opíšte svoju otázku alebo problém..."
                     />
                   </div>
 
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? (
-                      "Sending..."
+                      "Odosielanie..."
                     ) : (
                       <>
-                        Send Message
+                        Odoslať správu
                         <Send className="ml-2 h-4 w-4" />
                       </>
                     )}
@@ -224,29 +224,29 @@ export default function ContactPage() {
           <Card className="bg-red-50 border-red-200">
             <CardContent className="p-6">
               <h3 className="text-lg font-semibold text-red-900 mb-2">
-                Emergency Information
+                Informácie o pohotovosti
               </h3>
               <p className="text-red-800 mb-4">
-                If you are experiencing a medical emergency, please call 911 immediately. 
-                For urgent orthopaedic concerns after hours, call our emergency line at (555) 123-4568.
+                Ak máte zdravotnú pohotovosť, okamžite zavolajte 155. 
+                Pre naliehavé ortopedické problémy mimo pracovných hodín zavolajte našu pohotovostnú linku +421 555 123 789.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-red-700">
                 <div>
-                  <h4 className="font-medium mb-1">Call 911 for:</h4>
+                  <h4 className="font-medium mb-1">Volajte 155 pre:</h4>
                   <ul className="space-y-1">
-                    <li>• Severe trauma or injury</li>
-                    <li>• Suspected fractures with deformity</li>
-                    <li>• Loss of consciousness</li>
-                    <li>• Severe bleeding</li>
+                    <li>• Závažné trauma alebo úraz</li>
+                    <li>• Podozrenie na zlomeniny s deformáciou</li>
+                    <li>• Strata vedomia</li>
+                    <li>• Silné krvácanie</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">Call our emergency line for:</h4>
+                  <h4 className="font-medium mb-1">Volajte našu pohotovostnú linku pre:</h4>
                   <ul className="space-y-1">
-                    <li>• Severe pain after surgery</li>
-                    <li>• Signs of infection</li>
-                    <li>• Concerns about post-operative care</li>
-                    <li>• Urgent orthopaedic questions</li>
+                    <li>• Silnú bolesť po operácii</li>
+                    <li>• Príznaky infekcie</li>
+                    <li>• Obavy o pooperačnú starostlivosť</li>
+                    <li>• Naliehavé ortopedické otázky</li>
                   </ul>
                 </div>
               </div>

@@ -7,33 +7,33 @@ export default function HomePage() {
   const features = [
     {
       icon: Award,
-      title: "Expert Care",
-      description: "Board-certified orthopaedic surgeon with years of experience"
+      title: "Odborná starostlivosť",
+      description: "Certifikovaný ortopedický chirurg s dlhoročnými skúsenosťami"
     },
     {
       icon: Users,
-      title: "Patient-Centered",
-      description: "Personalized treatment plans tailored to your specific needs"
+      title: "Zameranie na pacienta",
+      description: "Personalizované liečebné plány prispôsobené vašim potrebám"
     },
     {
       icon: Clock,
-      title: "Timely Service",
-      description: "Efficient scheduling and minimal wait times"
+      title: "Včasné služby",
+      description: "Efektívne plánovanie a minimálne čakacie doby"
     },
     {
       icon: Shield,
-      title: "Advanced Techniques",
-      description: "Latest surgical and non-surgical treatment options"
+      title: "Pokročilé techniky",
+      description: "Najnovšie chirurgické i nechirurgické možnosti liečby"
     }
   ];
 
   const services = [
-    "Joint Replacement Surgery",
-    "Sports Medicine",
-    "Arthroscopic Surgery",
-    "Fracture Care",
-    "Spine Surgery",
-    "Hand & Wrist Surgery"
+    "Náhrada kĺbov",
+    "Športová medicína",
+    "Artroskopická chirurgia",
+    "Liečba zlomenín",
+    "Operácie chrbtice",
+    "Chirurgia ruky a zápästia"
   ];
 
   return (
@@ -44,43 +44,43 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Expert Orthopaedic Care with Dr. Ilja Chandoga
+                Odborná ortopedická starostlivosť s MUDr. Iljom Chandogom
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Comprehensive orthopaedic surgery and treatment for all your musculoskeletal needs. 
-                Get back to doing what you love with personalized, expert care.
+                Komplexná ortopedická chirurgia a liečba pre všetky vaše pohybové potreby. 
+                Vráťte sa k tomu, čo máte radi s personalizovanou, odbornou starostlivosťou.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100">
                   <Link to="/appointment">
-                    Book Appointment
+                    Objednať termín
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-blue-600">
-                  <Link to="/services">Learn More</Link>
+                  <Link to="/services">Zistiť viac</Link>
                 </Button>
               </div>
             </div>
             <div className="hidden lg:block">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8">
-                <h3 className="text-2xl font-semibold mb-4">Why Choose Dr. Chandoga?</h3>
+                <h3 className="text-2xl font-semibold mb-4">Prečo si vybrať MUDr. Chandogu?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
-                    Board-certified orthopaedic surgeon
+                    Certifikovaný ortopedický chirurg
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
-                    Minimally invasive surgical techniques
+                    Minimálne invazívne chirurgické techniky
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
-                    Comprehensive rehabilitation programs
+                    Komplexné rehabilitačné programy
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-blue-300 rounded-full mr-3"></div>
-                    Same-day appointments available
+                    Termíny v ten istý deň k dispozícii
                   </li>
                 </ul>
               </div>
@@ -94,11 +94,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Excellence in Orthopaedic Care
+              Excelencie v ortopedickej starostlivosti
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Dr. Chandoga combines years of experience with the latest medical advances 
-              to provide exceptional orthopaedic care.
+              MUDr. Chandoga spája dlhoročné skúsenosti s najnovšími medicínskymi pokrokmi 
+              na poskytovanie výnimočnej ortopedickej starostlivosti.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -125,11 +125,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Comprehensive Orthopaedic Services
+                Komplexné ortopedické služby
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                From routine check-ups to complex surgical procedures, Dr. Chandoga offers 
-                a full range of orthopaedic services to help you maintain an active lifestyle.
+                Od rutinných kontrol až po zložité chirurgické zákroky, MUDr. Chandoga ponúka 
+                celý rad ortopedických služieb na udržanie aktívneho životného štýlu.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {services.map((service, index) => (
@@ -141,35 +141,35 @@ export default function HomePage() {
               </div>
               <Button asChild>
                 <Link to="/services">
-                  View All Services
+                  Zobraziť všetky služby
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Schedule Your Consultation
+                Naplánujte si konzultáciu
               </h3>
               <p className="text-gray-600 mb-6">
-                Take the first step towards better orthopaedic health. Schedule a consultation 
-                with Dr. Chandoga to discuss your treatment options.
+                Urobte prvý krok k lepšiemu ortopedickému zdraviu. Naplánujte si konzultáciu 
+                s MUDr. Chandogom na prediskutovanie možností liečby.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-700">New Patient Consultation</span>
-                  <span className="font-semibold text-blue-600">Available</span>
+                  <span className="text-gray-700">Konzultácia pre nových pacientov</span>
+                  <span className="font-semibold text-blue-600">Dostupná</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-700">Same-day Appointments</span>
-                  <span className="font-semibold text-blue-600">Often Available</span>
+                  <span className="text-gray-700">Termíny v ten istý deň</span>
+                  <span className="font-semibold text-blue-600">Často dostupné</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-gray-700">Emergency Care</span>
+                  <span className="text-gray-700">Pohotovostná starostlivosť</span>
                   <span className="font-semibold text-blue-600">24/7</span>
                 </div>
               </div>
               <Button className="w-full mt-6" asChild>
-                <Link to="/appointment">Book Now</Link>
+                <Link to="/appointment">Objednať teraz</Link>
               </Button>
             </div>
           </div>
@@ -180,18 +180,18 @@ export default function HomePage() {
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Get Back to Your Active Life?
+            Pripravení vrátiť sa k aktívnemu životu?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-            Don't let pain hold you back. Contact Dr. Chandoga's office today to schedule 
-            your consultation and start your journey to recovery.
+            Nenechajte sa zadržať bolesťou. Kontaktujte ordinačné MUDr. Chandogu ešte dnes, 
+            naplánujte si konzultáciu a začnite svoju cestu k uzdraveniu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link to="/appointment">Schedule Appointment</Link>
+              <Link to="/appointment">Naplánujte termín</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-blue-600">
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Kontaktujte nás</Link>
             </Button>
           </div>
         </div>
